@@ -5,10 +5,17 @@ import Contact from 'components/contact'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
 import Image from 'next/legacy/image'
 import eyecatch from 'images/about.jpg'
+import Head from 'next/head'
+import Meta from 'components/meta'
 
 const About = () => {
     return (
         <Container>
+            <Meta pageTitle="アバウト" pageDesc="About development activities" 
+                    pageImg={eyecatch.src}
+                    pageImgW={eyecatch.width}
+                    pageImgH={eyecatch.height}
+            />
             <Hero
                 title="About"
                 subtitle="aobutaobutaobutaob"
