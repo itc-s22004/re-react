@@ -1,6 +1,6 @@
 import { getPostBySlug, getAllSlugs} from 'lib/api'
 import Container from 'components/container'
-import PostHeader from 'components/post-heder'
+import PostHeader from '@/components/post-header'
 import Image from 'next/image'
 import PostBody from 'components/post-body'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
@@ -38,6 +38,7 @@ export default function Post({
                     <Image
                         src={eyecatch.url}
                         alt=""
+                        key={eyecatch.url}
                         // layout="responsive"
                         style={{
                             width: '100%',

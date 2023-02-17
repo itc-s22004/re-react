@@ -12,7 +12,7 @@ export default function Posts({ posts }) {
                         <h2>{title}</h2>
                         <figure>
                             <Image
-                                src={eyecatchLocal.url}
+                                src={eyecatch.url}
                                 alt=""
                                 style={{
                                     width: '100%',
