@@ -12,7 +12,7 @@ const About = ({posts}) => {
             <Meta pageTitle="ブログ" pageDesc="ブログの記事一覧" />
             <Hero
                 title="blog"
-                subtitle="blogblgoblgo lg"
+                subtitle="About development activities"
             />
             <Posts posts={posts} />
         </Container>

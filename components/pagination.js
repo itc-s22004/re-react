@@ -1,7 +1,7 @@
 import styles from 'styles/pagination.module.css'
 import Link from 'next/link'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
+import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
 
 export default function Pagination ({
     prevText = '',
@@ -23,7 +23,7 @@ export default function Pagination ({
                 <li className={styles.next}>
                     <Link href={nextUrl} className={styles.iconText}>
                         <span>{nextText}</span>
-                        <FontAwesomeIcon icon={faChevronLeft} color="var(--gray-25)" />
+                        <FontAwesomeIcon icon={faChevronRight} color="var(--gray-25)" />
                     </Link>
                 </li>
             )}

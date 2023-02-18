@@ -9,7 +9,6 @@ export default function Posts({ posts }) {
             {posts.map(({ title, slug, eyecatch }) => (
                 <article className={styles.post} key={slug}>
                     <Link href={`/blog/${slug}`}>
-                        <h2>{title}</h2>
                         <figure>
                             <Image
                                 src={eyecatch.url}
@@ -26,6 +25,7 @@ export default function Posts({ posts }) {
                                 blurDataURL={eyecatch.blurDataURL}
                             />
                         </figure>
+                        <h2>{title}</h2>
                     </Link>
                 </article>
             ))}
